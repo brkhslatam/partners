@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "110e55aa-990f-4739-90d9-b4155a29f8d7",
+		"name": "Clivi Partners",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "48282"
+	},
+	"item": [
+		{
+			"name": "checkout-link",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-apikey",
+						"value": "YOUR_API_KEY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"user\": {\n        \"firstName\": \"John\",\n        \"lastName\": \"Doe\",\n        \"email\": \"john@gmail.com\",\n        \"whatsapp\": \"521234567890\",\n        \"addressLine1\": \"123 Fake St\",\n        \"addressLine2\": \"Int 500\",\n        \"city\": \"CDMX\",\n        \"state\": \"CDMX\",\n        \"countryCode\": \"MX\",\n        \"zipCode\": \"06100\"\n    },\n    \"plan\": \"PRO\",\n    \"redirectUrl\": \"https://www.google.com\",\n    \"affiliateId\": \"examedi\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.clivi.com.mx/v1/checkout-link",
+					"protocol": "https",
+					"host": [
+						"api",
+						"clivi",
+						"com",
+						"mx"
+					],
+					"path": [
+						"v1",
+						"checkout-link"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
